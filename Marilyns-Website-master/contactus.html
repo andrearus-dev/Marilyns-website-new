@@ -82,11 +82,12 @@
                 
                 <form  class="contact-form" action="sendform.php" method="POST" enctype="multipart/form-data">
                 <label name="name">Name</label>
-                    <input id="name" type="text" class="subject" required>
+                    <input id="name" type="text" class="subject">
+                    <small>Error message</small>
                 <label name="email">Email</label>
-                    <input id="email" type="text"  class="email" required>
+                    <input id="email" type="text"  class="email">
                 <label name="message">Message</label>
-                    <textarea id="message"  class="message" required></textarea>
+                    <textarea id="message" type="text" class="message"></textarea>
                 </form>
                 <div class="status">
                 </div>
