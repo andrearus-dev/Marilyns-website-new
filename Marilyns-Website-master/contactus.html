@@ -81,22 +81,27 @@
                 <p class="intro-text">Got a question? Send me a message... I'd love to hear from you!</p>
                 
                 <form  class="contact-form" action="sendform.php" method="POST" enctype="multipart/form-data">
-                    
-                <label name="name">Name</label>
+                <div>
+                    <label name="name">Name</label>
                     <input id="name" type="text" class="subject">
                     <small>Error message</small>
+                </div>
 
-                <label name="email">Email</label>
+                <div>
+                    <label name="email">Email</label>
                     <input id="email" type="text"  class="email">
                     <small>Error message</small>
+                </div>
 
+                <div>
                 <label name="message">Message</label>
                     <textarea id="message" type="text" class="message"></textarea>
                     <small>Error message</small>
-                </form>
-                <div class="status">
                 </div>
-                <button type="submit" name="submit" id="submit" class="btn btn-send">Send</button>     
+                </form>
+
+                </div>
+                <button type="submit" id="submit" class="btn btn-send">Send</button>     
         </div>
 
     </main>   
