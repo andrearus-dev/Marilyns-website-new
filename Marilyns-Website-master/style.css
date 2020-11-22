@@ -427,10 +427,6 @@ h1 {
 /*     FORM         */
 /*==================*/
 
-.contact-form {
-  display: grid;
-}
-
 /* -- Contact page -- */
 
 .column {
@@ -761,18 +757,18 @@ textarea {
     font-size: 2.5em;
   }
 
-  #contact-section > *,
+  /* #contact-section > *,
   #registration-section > * {
     max-width: 600px;
     margin: 2em auto;
-  }
+  } */
 
-  .main-grid-contact {
+  /* .main-grid-contact {
     display: flex;
     justify-content: space-between;
   }
 
   .main-grid-contact > .column {
     min-width: 250px;
-  }
+  } */
 }
