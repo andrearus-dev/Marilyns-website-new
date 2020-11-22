@@ -28,6 +28,10 @@ img {
   height: auto;
 }
 
+small {
+  visibility: hidden;
+}
+
 /*================== */
 /*    TYPOGRAPHY    */
 /**=================*/
@@ -761,15 +765,14 @@ textarea {
 
   .form-control {
     max-width: 550px;
-    justify-content: flex-start;
   }
 
-  #contact-section > *,
-  #registration-section > * {
+  #contact-section > * {
     max-width: 600px;
     margin: 2em auto;
   }
-  */ .main-grid-contact {
+
+  .main-grid-contact {
     display: flex;
     justify-content: space-between;
   }
