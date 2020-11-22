@@ -771,4 +771,9 @@ textarea {
   .main-grid-contact > .column {
     min-width: 250px;
   } */
+
+  form-control {
+    display: flex;
+    flex-direction: row;
+  }
 }
