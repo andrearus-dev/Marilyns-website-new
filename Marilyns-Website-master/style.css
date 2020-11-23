@@ -32,6 +32,10 @@ small {
   visibility: hidden;
 }
 
+small show {
+  visibility: visible;
+}
+
 /*================== */
 /*    TYPOGRAPHY    */
 /**=================*/
