@@ -25,8 +25,8 @@ function showError(input, message) {
 
     const formControl = input.value;
     formControl.className = 'form-control error';
-    const smallTag = document.querySelector('small');
-    smallTag.innerText = message;
+    const small = document.querySelector('small');
+    small.innerText = message;
 }
 
 
@@ -41,4 +41,4 @@ form.addEventListener('submit', function(e) {
     } else {
         showSuccess(name);
     }
-})
+});

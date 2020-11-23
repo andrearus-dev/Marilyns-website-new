@@ -32,7 +32,7 @@ small {
   visibility: hidden;
 }
 
-small show {
+.form-control error small {
   visibility: visible;
   color: red;
 }
