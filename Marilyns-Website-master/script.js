@@ -16,7 +16,6 @@ openButton.addEventListener("click", () => {
 //Grab elements
 
 const form = document.querySelector('.contact-form');
-const formControl = document.querySelectorAll('.form-control');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
@@ -25,6 +24,7 @@ const message = document.getElementById('message');
 function showError(input, message) {
 
     const formControl = input.value;
+    formControl.className = 'form-control error';
     const smallTag = document.querySelector('small');
     smallTag.innerText = message;
 }
