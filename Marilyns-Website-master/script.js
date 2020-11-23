@@ -13,7 +13,17 @@ openButton.addEventListener("click", () => {
 }); 
 
 
+//Grab elements
+
 const form = document.querySelector('.contact-form');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
+
+
+
+
+form.addEventListener('submit', function(e) {
+
+    
+})
