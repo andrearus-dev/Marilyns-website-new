@@ -37,6 +37,10 @@ small {
   color: red;
 }
 
+.form-control.success input {
+  border-color: green;
+}
+
 /*================== */
 /*    TYPOGRAPHY    */
 /**=================*/

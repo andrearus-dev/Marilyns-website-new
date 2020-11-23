@@ -30,7 +30,8 @@ function showError(input, message) {
 }
 
 function showSuccess(input) {
-    
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success'
 }
 
 
