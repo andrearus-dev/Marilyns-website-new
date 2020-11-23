@@ -29,6 +29,10 @@ function showError(input, message) {
     small.innerText = message;
 }
 
+function showSuccess(input) {
+    
+}
+
 
 
 
@@ -37,7 +41,7 @@ form.addEventListener('submit', function(e) {
     e.preventDefault();
 
     if(name.value === '') {
-        showError(name, 'Name is required');
+        showError(name, '* Name is required');
     } else {
         showSuccess(name);
     }
