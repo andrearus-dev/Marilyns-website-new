@@ -31,7 +31,7 @@ function showError(input, message) {
 
 function showSuccess(input) {
     const formControl = input.parentElement;
-    formControl.className = 'form-control success'
+    formControl.className = 'form-control success';
 }
 
 function isEmailValid() {
@@ -55,8 +55,10 @@ form.addEventListener('submit', function(e) {
     if(email.value === '') {
         showError(email, '* Email is required');
     } else if (!isEmailValid(email.value)) {
-        showError(email, '* Email is not valid')
-    }
-}
+      showError(email, '* Email is not valid');}
+      else {
+          showSuccess(email);
+      }
+
     
 });
