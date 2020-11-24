@@ -37,6 +37,8 @@ function showSuccess(input) {
 
 
 
+
+
 form.addEventListener('submit', function(e) {
 
     e.preventDefault();
@@ -45,5 +47,11 @@ form.addEventListener('submit', function(e) {
         showError(name, '* Name is required');
     } else {
         showSuccess(name);
+    }
+
+    if(email.value === '') {
+        showError(email, '* Email is required');
+    } else if {
+
     }
 });
