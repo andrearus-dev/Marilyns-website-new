@@ -29,6 +29,14 @@ function showError(input, message) {
     small.innerText = message;
 }
 
+function textAreaError(input, message) {
+
+    const formControl = textarea.parentElement;
+    formControl.className = 'form-control error';
+    const small = document.querySelector('small');
+    small.innerText = message;
+}
+
 function showSuccess(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
@@ -60,7 +68,7 @@ form.addEventListener('submit', function(e) {
       }
 
       if(message === '') {
-        showError(message, 'Message is required')
+        textAreaError(message, 'Message is required')
       } else {
           showSuccess(message);
       }
