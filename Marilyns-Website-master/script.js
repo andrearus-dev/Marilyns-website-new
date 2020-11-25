@@ -59,4 +59,10 @@ form.addEventListener('submit', function(e) {
           showSuccess(email);
       }
 
+      if(message === '') {
+        showError(message, 'Message is required')
+      } else {
+          showSuccess(message);
+      }
+
 });
