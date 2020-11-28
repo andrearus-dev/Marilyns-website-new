@@ -59,8 +59,8 @@ function getFieldName(input) {
 
 
 form.addEventListener('submit', function(e) {
+    
     e.preventDefault();
-
     checkRequired([name, email, message]);
 
 });
