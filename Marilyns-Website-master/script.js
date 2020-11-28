@@ -29,13 +29,18 @@ function showError(input, message) {
     small.innerText = message;
 }
 
-function textAreaError(input, message) {
+// function textAreaError(input, message) {
 
-    const formControl = textarea.parentElement;
-    formControl.className = 'form-control error';
-    const small = document.querySelector('small');
-    small.innerText = message;
-}
+   
+//     formControl.className = 'form-control error';
+//     const small = document.querySelector('small');
+//     small.innerText = message;
+// }
+
+// textAreaError(message, 'hello');
+
+const formControl = textarea.parentElement;
+console.log(formControl);
 
 function showSuccess(input) {
     const formControl = input.parentElement;
@@ -53,24 +58,5 @@ function isValidEmail() {
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    if(name.value === '') {
-        showError(name, '*Name is required');
-    } else {
-        showSuccess(name);
-    }
-
-    if(email.value === '') {
-        showError(email,'*Email is required');}
-     else if(!isValidEmail(email.value)) {
-      showError(email,'*Email is not valid');}
-      else {
-          showSuccess(email);
-      }
-
-      if(message === '') {
-        textAreaError(message, 'Message is required')
-      } else {
-          showSuccess(message);
-      }
 
 });
