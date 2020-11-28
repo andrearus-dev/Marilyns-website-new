@@ -29,18 +29,6 @@ function showError(input, message) {
     small.innerText = message;
 }
 
-// function textAreaError(input, message) {
-
-   
-//     formControl.className = 'form-control error';
-//     const small = document.querySelector('small');
-//     small.innerText = message;
-// }
-
-// textAreaError(message, 'hello');
-
-const formControl = textarea.parentElement;
-console.log(formControl);
 
 function showSuccess(input) {
     const formControl = input.parentElement;
@@ -52,11 +40,27 @@ function isValidEmail() {
     return re.test(String(email).toLowerCase());
 }
 
+function checkRequired(inputArr) {
+
+    inputArr.forEach(function(input) {
+    if(input.value.trim() === '') {
+        showError(input, `${getFieldName(input)} is required`);
+    } else {
+        showSuccess(input);
+    }
+});
+}
+
+function getFieldName(input) {
+    return input.id.charAt(0).toUpperCase + input.id.split(1);
+}
+
 
 
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
+    checkRequired([name, email, message]);
 
 });
