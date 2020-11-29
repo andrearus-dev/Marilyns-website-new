@@ -50,7 +50,9 @@ function checkRequired(input) {
     }
 }
 
-
+function getFieldName(input) {
+    return input.id.charAt(0).toUpperCase + input.id.splice(1);
+}
 
 
 
