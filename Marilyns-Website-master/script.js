@@ -40,15 +40,11 @@ function isValidEmail() {
     return re.test(String(email).toLowerCase());
 }
 
-function checkRequired(inputArr) {
+function checkRequired(input) {
 
-    inputArr.forEach(function(input) {
     if(input.value.trim() === '') {
-        showError(input, `${getFieldName(input)} is required`);
-    } else {
-        showSuccess(input);
+        show
     }
-});
 }
 
 function getFieldName(input) {
