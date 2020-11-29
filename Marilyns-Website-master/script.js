@@ -43,13 +43,14 @@ function isValidEmail() {
 function checkRequired(input) {
 
     if(input.value.trim() === '') {
-        show
+        showError(input, `${getFieldName
+        (input)} is required`); 
+    } else {
+        showSuccess(input)
     }
 }
 
-function getFieldName(input) {
-    return input.id.charAt(0).toUpperCase + input.id.split(1);
-}
+
 
 
 
