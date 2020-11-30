@@ -18,7 +18,7 @@ openButton.addEventListener("click", () => {
 const form = document.getElementById('form');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
-const message = document.getElementById('message');
+const textArea = document.getElementById('text-area');
 
 
 function showError(input, message) {
@@ -26,7 +26,7 @@ function showError(input, message) {
     const formControl = input.parentElement;
     formControl.className = 'form-control error';
     const small = document.querySelector('small');
-    small.innerText = message;
+    // small.innerText = message;
 }
 
 
