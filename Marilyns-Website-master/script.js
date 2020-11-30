@@ -43,7 +43,7 @@ function isValidEmail() {
 function checkRequired(inputArr) {
 
     inputArr.forEach(function(input) {
-    if(input.value.trim() === '' || message.value.trim() === '' ) {
+    if(input.value.trim() === '') {
         showError(input, `${getFieldName
         (input)} is required`); 
     } else {
