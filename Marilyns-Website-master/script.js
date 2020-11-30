@@ -12,6 +12,8 @@ openButton.addEventListener("click", () => {
     nav.classList.add('navigation-open');
 }); 
 
+//Form validation
+
 
 //Grab elements
 
@@ -41,7 +43,6 @@ function isValidEmail() {
 }
 
 function checkRequired(inputArr) {
-
     inputArr.forEach(function(input) {
     if(input.value.trim() === '') {
         showError(input, `${getFieldName
