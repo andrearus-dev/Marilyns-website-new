@@ -44,8 +44,8 @@ function isValidEmail() {
     return re.test(String(email).toLowerCase());
 }
 
-function checkRequired(inputArr) {
-    inputArr.forEach(function(input) {
+function checkRequired() {
+    arrayName.forEach(function(input) {
     if(input.value.trim() === '') {
         showError(input, `${getFieldName
         (input)} is required`); 
