@@ -44,10 +44,8 @@ function isValidEmail() {
     return re.test(String(email).toLowerCase());
 }
 
-function checkRequired() {
-
-    const arrayName = [name, email, textArea];
-    arrayName.forEach(function(input) {
+function checkRequired(inputArr) {
+    inputArr.forEach(function(input) {
     if(input.value.trim() === '') {
         showError(input, `${getFieldName
         (input)} is required`); 
@@ -67,7 +65,7 @@ function getFieldName(input) {
 form.addEventListener('submit', function(e) {
     
     e.preventDefault();
-    checkRequired;
+    checkRequired([name, email, textArea]);
 
 });
 
