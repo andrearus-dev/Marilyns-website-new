@@ -22,7 +22,7 @@ const name = document.getElementById('name');
 const email = document.getElementById('email');
 const textArea = document.getElementById('text-area');
 
-const arrayName = [name, email, textArea];
+
 
 
 function showError(input, message) {
@@ -45,6 +45,8 @@ function isValidEmail() {
 }
 
 function checkRequired() {
+
+    const arrayName = [name, email, textArea];
     arrayName.forEach(function(input) {
     if(input.value.trim() === '') {
         showError(input, `${getFieldName
