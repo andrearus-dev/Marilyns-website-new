@@ -22,7 +22,7 @@ const name = document.getElementById('name');
 const email = document.getElementById('email');
 const textArea = document.getElementById('text-area');
 
-
+const inputArr = [name,email,textArea];
 
 
 function showError(input, message) {
@@ -44,7 +44,7 @@ function isValidEmail() {
     return re.test(String(email).toLowerCase());
 }
 
-function checkRequired(inputArr) {
+function checkRequired() {
     inputArr.forEach(function(input) {
     if(input.value.trim() === '') {
         showError(input, `${getFieldName
@@ -65,7 +65,7 @@ function getFieldName(input) {
 form.addEventListener('submit', function(e) {
     
     e.preventDefault();
-    checkRequired([name, email, textArea]);
+    checkRequired();
 
 });
 
