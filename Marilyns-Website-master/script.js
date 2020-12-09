@@ -23,8 +23,6 @@ const email = document.getElementById('email');
 const textArea = document.getElementById('text-area');
 
 
-
-
 function showError(input, message) {
 
     const formControl = input.parentElement;
@@ -64,7 +62,7 @@ function getFieldName(input) {
 form.addEventListener('submit', function(e) {
     
     e.preventDefault();
-    checkRequired([name,email,textArea]);
+    checkRequired([name, email, textArea]);
 
 });
 
