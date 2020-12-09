@@ -30,7 +30,7 @@ function showError(input, message) {
     const formControl = input.parentElement;
     formControl.className = 'form-control error';
     const small = document.querySelector('small');
-    // small.innerText = message;
+    small.innerText = message;
 }
 
 
