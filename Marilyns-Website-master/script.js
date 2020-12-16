@@ -31,6 +31,10 @@ function showError(input, message) {
     small.innerText = message;
 }
 
+function showError(textarea, message) {
+    
+}
+
 
 function showSuccess(input) {
     const formControl = input.parentElement;
