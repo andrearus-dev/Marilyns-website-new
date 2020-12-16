@@ -32,7 +32,10 @@ function showError(input, message) {
 }
 
 function showError(textarea, message) {
-    
+    const formControl = textarea.parentElement;
+    formControl.className = 'form-control error';
+    const small = formControl.querySelector('small');
+    small.innerText = message;
 }
 
 
@@ -48,7 +51,7 @@ function isValidEmail() {
 
 function checkRequired(inputArr) {
     inputArr.forEach(function(input) {
-    if(input.value.trim() === '') {
+    if(input.value.trim() === '' || textarea.value.trim() === '') {
         showError(input, `${getFieldName(input)} is required`); 
     } else {
         showSuccess(input)
