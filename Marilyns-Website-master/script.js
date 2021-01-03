@@ -32,7 +32,7 @@ function showError(input, message) {
 
 
 function showSuccess(input) {
-    const formControl = input.parentElement;
+    const formControl = input.parentElement && textArea.parentElement;
     formControl.className = 'form-control success';
 }
 
