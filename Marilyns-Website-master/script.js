@@ -18,7 +18,7 @@ openButton.addEventListener("click", () => {
 //Grab elements
 
 const form = document.getElementById('form');
-const name = document.getElementById('name');
+const clientName = document.getElementById('name');
 const email = document.getElementById('email');
 const textArea = document.getElementById('text-area');
 
@@ -61,7 +61,6 @@ function getFieldName(input) {
 form.addEventListener('submit', function(e) {
     
     e.preventDefault();
-    checkRequired([name, email, textArea]);
+    checkRequired([clientName, email, textArea]);
 
 });
-
